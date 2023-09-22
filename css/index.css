@@ -1,0 +1,15 @@
+/* section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs-content {
+    text-align: center;
+    flex: 0.7;
+}
+.display{
+    overflow-y: scroll;
+    border: 1px solid black;
+    height: 24rem;
+} */

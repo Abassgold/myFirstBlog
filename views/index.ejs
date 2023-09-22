@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <section>
+            <div class="blogs-content">
+                <h2>
+                    <%= title %>
+                </h2><br>
+                <% if (blog.length> 0) { %>
+                    <% blog.map((arr, index)=>{ %>
+                        <div>
+                            <h1>
+                                <%= arr.title %>
+                            </h1>
+                            <h3>
+                                <%= arr.snippet %>
+                            </h3>
+                            <p>
+                                <%= arr.body %>
+                            </p>
+                            <a href="/blogs/<%= arr._id %>">More</a>
+                        </div>
+                        <% }) %>
+                            <% } else { %>
+                                <h2>No blogs Available</h2>
+                                <% } %>
+
+            </div>
+        </section>
+        <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

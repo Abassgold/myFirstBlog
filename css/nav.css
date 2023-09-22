@@ -1,0 +1,32 @@
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 30px;
+font-weight: 600px;
+text-decoration: none;
+margin-bottom: 5rem;
+margin: 0 20px;
+
+}
+nav div,
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
+}
+li a, div a{
+    text-decoration: none;
+}
+footer{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    background: #066c4e;
+    margin-top: 1rem;
+
+}

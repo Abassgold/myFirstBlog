@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+
+
+        <section>
+            <div id="parent">
+                <div id="head">
+                    <h1>POST YOUR BLOG</h1>
+                </div>
+                <div class="form">
+                    <form action="/blogs" method="post">
+                        <div class="info" id="info">
+                            <input type="text" class="input" id="inputName" placeholder="Blog tittle" required
+                                name="title">
+                        </div><br>
+                        <div class="info" id="info1">
+                            <input type="text" class="input" id="pwd" placeholder="Blog Header" required
+                                name="snippet">
+                        </div><br>
+                        <div class="textArea" id="info3">
+                            <input type="text" id="pwd" placeholder="Body..." required name="body">
+                        </div><br>
+                        <div style="text-align: end;">
+                            <button type="submit" id="submit">POST</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <%- include('./partials/footer.ejs') %>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</html>
